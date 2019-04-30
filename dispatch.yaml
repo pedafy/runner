@@ -3,7 +3,7 @@ dispatch:
   - url: "api.pedafy.com/tig/v1/*"
     service: tig
 
-  - url: "*pedafy.com/favicon.ico"
+  - url: "*/favicon.ico"
     service: default
 
   - url: "pedafy.com/*"
