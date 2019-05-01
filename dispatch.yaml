@@ -1,10 +1,22 @@
 dispatch:
-  # Send all traffic to service tig
+
+  # Service: PhpMyAdmin
+  # https://sql.pedafy.com
+  - url: "sql.pedafy.com/*"
+    service: phpmyadmin
+
+  # Service: TIG/Assignments
+  # Version: V1 of the API
+  # https://api.pedafy.com/tig/v1/
   - url: "api.pedafy.com/tig/v1/*"
     service: tig
 
+  # Serve the favicon for services
+  # https://pedafy.com/favicon.ico
   - url: "*/favicon.ico"
     service: default
 
+  # Serve the default service
+  # https://pedafy.com/*
   - url: "pedafy.com/*"
     service: default
