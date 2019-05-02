@@ -8,8 +8,16 @@ dispatch:
   # Service: TIG/Assignments
   # Version: V1 of the API
   # https://api.pedafy.com/tig/v1/
+  # GitHub: https://github.com/pedafy/pedafy-assignments
   - url: "api.pedafy.com/tig/v1/*"
     service: tig
+
+  # Service: tasks
+  # Version: V1 of the API
+  # https://api.pedafy.com/tasks/v1/
+  # GitHub: https://github.com/pedafy/pedafy-tasks
+  - url: "api.pedafy.com/tasks/v1/*"
+    service: tasks
 
   # Serve the favicon for services
   # https://pedafy.com/favicon.ico
